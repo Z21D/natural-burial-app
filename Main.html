@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+Description: This HTML document presents a registration form for natural burials, providing users with information about natural burial practices and gathering personal and burial preference details.
+Authers :
+    Zaid(Leader)
+    Ayman
+    Mohammed
+    Shrey
+-->
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Burial Registration Form</title>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- External Scripts -->
+    <script src="https://kit.fontawesome.com/fe180be85f.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <script src="tailwind.config.js" defer></script>
+    <script src="server.js"></script>
+</head>
+
+<body>
+    <!-- Background Image -->
+    <img src="https://media.istockphoto.com/id/1133942459/photo/green-grass-and-forest-landscape-in-city-park.webp?b=1&s=170667a&w=0&k=20&c=xWmOP7X9Es9R9A5iQ-LrHZYDIwfaVPk4hvDMCz1hlSM="
+        alt="Description" class="background-image">
+    <!-- Title -->
+    <h1 class="hh1">Natural Burial Registration Form</h1>
+
+    <table class="tablee"> <!--this table draws the outline of the webpage-->
+        <tr>
+            <td>
+                <!-- What is Natural Burial Section -->
+                <div class="text">
+                    <h3 class="hh3">What is Natural Burial?</h3>
+                    <p class="container2">
+                        <!-- Play Button for Audio -->
+                        <button style="font-size: 60px" onclick="playAudio('introAudio')"><i
+                                class='fa-solid fa-play'></i></button>
+
+                        <!-- Description of Natural Burial -->
+                        Natural burial, an ancient practice rooted in human history, embraces the interment of the
+                        deceased in a natural setting, free from the trappings of conventional burial customs. This
+                        approach encompasses two main methods: one involving biodegradable caskets and the other
+                        eschewing vessels entirely, allowing for burial directly in the earth or with biodegradable
+                        shrouds. By removing barriers between the deceased and nature, such as embalming and outer
+                        burial containers, natural burial fosters a more intimate connection with the environment.
+                        <br><br>
+                        Environmental consciousness lies at the heart of natural burial, motivating individuals to opt
+                        for eco-friendly end-of-life practices. Through the avoidance of toxic embalming chemicals and
+                        the reduction of fossil fuel usage in processing human remains, natural burials significantly
+                        diminish their environmental footprint. Moreover, by utilizing biodegradable burial vessels or
+                        none at all, these practices consume fewer resources compared to traditional burials. Many
+                        practitioners also integrate carbon offsetting initiatives into the process, such as
+                        contributing to tree planting or conservation efforts, further aligning the burial process with
+                        sustainable principles.
+                    </p>
+                </div>
+
+                <!-- Personal Information Section -->
+                <div>
+                    <h3 class="hh3">Personal Information</h3>
+
+                    <!-- Form Inputs for Personal Information -->
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio1')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            First Name:
+                        </h2>
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                    </div>
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio2')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Last Name:
+                        </h2>
+                        <input type="text" name="lastName" placeholder="Last Name" required>
+                    </div>
+
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio3')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Date of Birth:
+                        </h2>
+                        <input type="date" name="dob" required>
+                    </div>
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio4')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Place of Birth:
+                        </h2>
+                        <input type="text" name="pob" placeholder="Place of Birth" required>
+                    </div>
+
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio5')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Email Address:
+                        </h2>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio6')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Phone Number:
+                        </h2>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio7')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Address:
+                        </h2>
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+
+                    <div class="gender-container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio8')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Gender:
+                        </h2>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+
+                <!-- Burial Preferences Section -->
+                <h3 class="hh3">Burial Preferences</h3>
+
+                <!-- Grid Layout for Burial Preferences -->
+                <div>
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio9')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Grave Site:
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-3 gap-4">
+
+
+                        <div class="container-left  grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio10')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="natural-burial-grounds">Natural Burial Grounds</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="natural-burial-grounds" name="preferredLocation"
+                                    value="natural-burial-grounds">
+                            </div>
+
+                            <div>
+                                <img src="./images/Natural Burial Grounds.jpeg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-right grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio11')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="conservation-burial-grounds">Conservation Burial Grounds</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="conservation-burial-grounds" name="preferredLocation"
+                                    value="conservation-burial-grounds">
+                            </div>
+
+                            <div>
+                                <img src="./images/conservation burial grounds.jpeg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-left grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio12')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="green-burial-pods">Green Burial Pods</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="green-burial-pods" name="preferredLocation"
+                                    value="green-burial-pods">
+                            </div>
+
+                            <div>
+                                <img src="./images/Green Burial Pods.webp" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-right grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio13')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="woodland-burial-sites">Woodland Burial Sites</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="woodland-burial-sites" name="preferredLocation"
+                                    value="woodland-burial-sites">
+                            </div>
+
+                            <div>
+                                <img src="./images/Woodland Burial Sites.jpeg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-left grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio14')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="ocean-burials">Ocean Burials</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="ocean-burials" name="preferredLocation" value="ocean-burials">
+                            </div>
+
+                            <div>
+                                <img src="./images/Ocean Burials.webp" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-right grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio15')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="home-burials">Home Burials</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="home-burials" name="preferredLocation" value="home-burials">
+                            </div>
+
+                            <div>
+                                <img src="./images/Home Burials.avif" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Marker Options Section -->
+                <div>
+                    <div class="container">
+                        <h2 class="hh2">
+                            <button style="font-size: 60px" onclick="playAudio('audio16')"><i
+                                    class='fa-solid fa-play'></i></button>
+                            Marker Options:
+                        </h2>
+                    </div>
+
+                    <!-- Grid Layout for Marker Options -->
+                    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+
+                        <div class="container-left grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio17')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="natural-stones">Natural Stones</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="natural-stones" name="markerOption" value="natural-stones">
+                            </div>
+
+                            <div>
+                                <img src="./images/Natural Stones.jpg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-right grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio18')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="native-plant-markers">Native Plant Markers</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="native-plant-markers" name="markerOption"
+                                    value="native-plant-markers">
+                            </div>
+
+                            <div>
+                                <img src="./images/Native Plant Markers.jpeg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-left grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio19')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="wooden-plaques">Wooden Plaques</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="wooden-plaques" name="markerOption" value="wooden-plaques">
+                            </div>
+
+                            <div>
+                                <img src="./images/Wooden Plaques.webp" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                        <div class="container-right grid grid-cols-2 grid-rows-2 gap-0">
+
+                            <div>
+                                <button style="font-size: 60px" onclick="playAudio('audio20')"><i
+                                        class='fa-solid fa-play'></i></button>
+                            </div>
+
+                            <div>
+                                <label for="biodegradable-metal-plates">Biodegradable Metal Plates</label><br>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="biodegradable-metal-plates" name="markerOption"
+                                    value="biodegradable-metal-plates">
+                            </div>
+
+                            <div>
+                                <img src="./images/Biodegradable Metal Plates.jpeg" alt="Image Description">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Input field for additional requests -->
+                <div class="container">
+                    <h2 class="hh2">
+                        <button style="font-size: 60px" onclick="playAudio('audio21')"><i
+                                class='fa-solid fa-play'></i></button>
+                        Additional Requests:
+                    </h2>
+
+                    <input type="reqbox" name="additionalRequests" placeholder="Special Request">
+                </div>
+
+                <!-- Input field for Inscription requests -->
+                <div class="container">
+                    <h2 class="hh2">
+                        <button style="font-size: 60px" onclick="playAudio('audio22')"><i
+                                class='fa-solid fa-play'></i></button>
+                        Inscription Requests:
+                    </h2>
+
+                    <input type="reqbox" name="inscriptionRequests" placeholder="Special Inscription Requests">
+
+                </div>
+
+
+                <!-- Button to submit the form -->
+                <div class="container">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+                <div class="container">
+                    <button class="upload-btn" onclick="upload()">Upload</button>
+                </div>
+
+                <div class="container">
+                    <button class="download-btn" onclick="download()">Download</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Audio Elements -->
+    <audio id="audio1" src="./audio/first name.mp3"></audio>
+    <audio id="audio2" src="./audio/last name.mp3"></audio>
+    <audio id="audio3" src="./audio/date of birth.mp3"></audio>
+    <audio id="audio4" src="./audio/place of birth.mp3"></audio>
+    <audio id="audio5" src="./audio/email adress.mp3"></audio>
+    <audio id="audio6" src="./audio/phone number.mp3"></audio>
+    <audio id="audio7" src="./audio/adress.mp3"></audio>
+    <audio id="audio8" src="./audio/gender.mp3"></audio>
+    <audio id="audio9" src="./audio/grave site.mp3"></audio>
+    <audio id="audio10" src="./audio/natural burial grounds.mp3"></audio>
+    <audio id="audio11" src="./audio/conservation burial grounds.mp3"></audio>
+    <audio id="audio12" src="./audio/green burial pods.mp3"></audio>
+    <audio id="audio13" src="./audio/woodland burial sites.mp3"></audio>
+    <audio id="audio14" src="./audio/ocean burials.mp3"></audio>
+    <audio id="audio15" src="./audio/home burials.mp3"></audio>
+    <audio id="audio16" src="./audio/marker options.mp3"></audio>
+    <audio id="audio17" src="./audio/naturalstones.mp3"></audio>
+    <audio id="audio18" src="./audio/native plant markers.mp3"></audio>
+    <audio id="audio19" src="./audio/wooden plaques.mp3"></audio>
+    <audio id="audio20" src="./audio/biodegradable metal plates.mp3"></audio>
+    <audio id="audio21" src="./audio/additional requests.mp3"></audio>
+    <audio id="audio22" src="./audio/inscription requests.mp3"></audio>
+    <audio id="introAudio" src="./audio/intro.mp3"></audio>
+
+</body>
+
+</html>

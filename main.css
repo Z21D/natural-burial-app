@@ -1,0 +1,260 @@
+.hh1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 550%;
+  }
+  
+  .hh2 {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  
+  .hh3 {
+    text-align: center;
+    font-size: 530%;
+  }
+    
+  .tablee {
+    position: relative;
+      background-color: #ffffff10;
+      backdrop-filter: blur(102px);
+      -webkit-backdrop-filter: blur(92px);
+      width: calc(90% + 20px); /* Adjusted width to account for border and padding */
+      margin: auto; /* Center the container horizontally */
+      padding: 20px; /* Added padding to match the frame padding */
+    border-radius: 20px;
+    border: 10px solid black;
+    padding: 20px;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+  }
+    
+  .container {
+    width: 100%; /* Adjusted width to accommodate both field name and speaker button */
+    align-items: center;
+    display:flex;
+    margin-bottom: 120px;
+    margin-left: 20px ;
+  }
+
+  .container-left {
+    width: 20; /* Adjusted width to accommodate both field name and speaker button */
+    align-items: center;
+    display:flex;
+    margin-bottom: 120px;
+    margin-left: 20px ;
+    font-size: 250%;
+  }
+
+  .container-right {
+    width: 80%; /* Adjusted width to accommodate both field name and speaker button */
+    align-items: center;
+    display:flex;
+    margin-bottom: 120px;
+    margin-left: 20px ;
+    font-size: 250%;
+  }
+  .radioo{
+    font-size: 130%;
+  }
+  
+  input[type="reqbox"]{
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 300%;
+    margin-left: auto;
+    margin-right: 10px;
+    
+  }
+  
+  .container input[type="radio"]{
+    width: 20%;
+    height: 80px;
+    font-size: 280%;
+    margin-left: auto;
+    vertical-align: auto;
+    margin-right: 10px;
+  }
+
+  .gender-container input[type="radio"]{
+    width: 20%;
+    height: 80px;
+    font-size: 280%;
+    margin-left: auto;
+    vertical-align: auto;
+    margin-right: 10px;
+  }
+
+
+  .container input[type="text"],
+  .container input[type="email"],
+  .container input[type="address"],
+  .container input[type="date"],
+  .container input[type="tel"],
+  .container input[type="submit" ] {
+    width: calc(100% - 40%);
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 310%;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  label[for="male"],
+  label[for="female"],
+  label[for="other"] {
+    font-size: 390%;
+  }
+  
+
+  .container2 {
+    font-size: 280%;
+  }
+  
+    
+  .container input[type="radio"] + label {
+    font-size: 390%; /* Adjust the font-size as per your preference */
+  }
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Ensures the image stays behind other content */
+  }
+  
+  .submit-btn {
+    font-size: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 30px;
+    font-size: 400%;
+    width:100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.upload-btn{
+  font-size: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 30px;
+  font-size: 400%;
+  width:100%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.download-btn{
+  font-size: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 30px;
+  font-size: 400%;
+  width:100%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+.grid {
+  border: 0px solid black;
+}
+
+.container-left {
+  border: 0px solid red;
+  margin-bottom: 15%;
+}
+
+.container-left > div {
+  border: 0px solid;
+}
+
+.container-left > div:nth-child(1) {
+  width: 6cm;
+  height: 10.2cm;
+  border-color: blue;
+}
+
+.container-left > div:nth-child(2) {
+  height: 5cm;
+  border-color: green;
+}
+
+.container-left > div:nth-child(3) {
+  width: 6cm;
+  height: 10.2cm;
+  border-color: orange;
+}
+
+.container-left > div:nth-child(4) {
+  border-color: purple;
+}
+
+.container-right {
+  width: 80%;
+  border: 0px solid red;
+  margin-bottom: 15%;
+}
+
+.container-right > div {
+  border: 0px solid;
+}
+
+.container-right > div:nth-child(1) {
+  width: 6cm;
+  height: 10.2cm;
+  border-color: blue;
+}
+
+.container-right > div:nth-child(2) {
+  height: 5cm;
+  border-color: green;
+}
+
+.container-right > div:nth-child(3) {
+  width: 6cm;
+  height: 10.2cm;
+  border-color: orange;
+}
+
+.container-right > div:nth-child(4) {
+  border-color: purple;
+}
+
+.container-left > div > input[type="radio"],
+.container-right > div > input[type="radio"] {
+  margin-top: 55%;
+  margin-left: 5%;
+  width: 130px; /* Adjust the width as per your preference */
+  height: 130px; /* Adjust the height as per your preference */
+}
+
+.fa-play {
+  font-size: 100px; /* Adjust the font size as per your preference */
+}
+button.play-btn {
+  padding: 20px; /* Adjust the padding as per your preference */
+}
+
+.container-left button .fa-play,
+.container-right button .fa-play {
+  margin-top: 75%;
+  margin-left: 40%;
+  font-size: 160px; /* Adjust the font size as per your preference */
+}
